@@ -23,7 +23,10 @@ class StremEdit extends React.Component {
         {/* here first {} is for indicating it contain some js function
         2nd {} is indicating that we are passing some js obejct */}
         <StreamForm
-          initialValues={{ title: "EDIT ME", description: "Change Me too" }}
+          initialValues={{
+            title: this.props.stream.title,
+            description: this.props.stream.description,
+          }}
           onSubmit={this.onSubmit}
         />
       </div>
