@@ -20,7 +20,12 @@ class StremEdit extends React.Component {
     return (
       <div>
         <h3>Edit a Stream</h3>
-        <StreamForm onSubmit={this.onSubmit} />
+        {/* here first {} is for indicating it contain some js function
+        2nd {} is indicating that we are passing some js obejct */}
+        <StreamForm
+          initialValues={{ title: "EDIT ME", description: "Change Me too" }}
+          onSubmit={this.onSubmit}
+        />
       </div>
     );
   }
