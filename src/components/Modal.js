@@ -5,7 +5,8 @@ const Modal = (props) => {
   return ReactDOM.createPortal(
     <div className="ui dimmer modals visible active">
       <div className="ui standard modal visible active">kahslkdjhslhj</div>
-    </div>
+    </div>,
+    document.getElementById("modal")
   );
 };
 
